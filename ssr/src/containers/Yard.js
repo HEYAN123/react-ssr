@@ -1,13 +1,17 @@
-import React from 'react';
+import React , { Component } from 'react';
 
-const Yard = () => {
-    return (
-        <div>
+class Yard extends Component {
+    componentDidMount() {
+        console.log('yard')
+    }
+    render() {
+        return (
             <div>
                 hello this is my yard~
             </div>
-        </div>
-    )
+        )
+    }
 }
+
 
 export default Yard;

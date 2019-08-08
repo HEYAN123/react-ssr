@@ -10,10 +10,9 @@ const changeList = list => ({
 
 export const getList = () => {
     return (dispatch) => {
-        return axios.get('list')
+        return axios.get('http://localhost:3001/api/list')
             .then((res) => {
-                const list = rea.data.data;
-                console.log(list);
+                const list = res.data.data;
                 dispatch(changeList(list));
             })
     }
